@@ -12,8 +12,8 @@ const openai = new OpenAI({
 
 const s3 = new AWS.S3({
   credentials: {
-    accessKeyId: env.AWS_ACCESS_KEY,
-    secretAccessKey: env.AWS_SECRET_KEY,
+    accessKeyId: env.NEXT_AWS_ACCESS_KEY,
+    secretAccessKey: env.NEXT_AWS_SECRET_KEY,
   },
 });
 
